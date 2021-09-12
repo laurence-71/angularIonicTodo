@@ -1,7 +1,8 @@
 {
   "name": "angularIonicTodo",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }

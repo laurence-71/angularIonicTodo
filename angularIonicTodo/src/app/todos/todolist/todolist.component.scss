@@ -1,0 +1,176 @@
+.container{
+    height: 75%;
+
+   margin-left: 40px;
+   margin-right: 40px;
+
+   overflow-y: scroll ;
+   
+    border: rgb(195, 154, 235) solid 2px;
+}
+
+.hide{
+    display: none;
+}
+
+.sun{
+    font-weight: bold;
+     padding-top: 5px;
+    padding-bottom: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    background-image: url("./../../../assets/image/sunny.jpeg");
+}
+
+.thunder{
+    font-weight: bold;
+    text-shadow: black 2px 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./../../../assets/image/thunder.jpg");
+}
+
+.rain{
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./../../../assets/image/rain.jpg");
+}
+
+.drizzle{
+    font-weight: bold;
+    color:black;
+   
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./../../../assets/image/drizzle.jpg");
+}
+
+.snow{
+    color:black;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./../../../assets/image/snow.jpg");
+}
+
+.clouds{
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./../../../assets/image/clouds.jpg");
+   text-shadow: black 2px 2px;
+}
+
+.atmosphere{
+    color: black;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./../../../assets/image/fog.jpg");
+}
+
+
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+.btnCreate{
+    color: black;
+    background-color: rgb(233, 190, 197);
+}
+
+.dayTime{
+  
+   
+    border: rgb(195, 154, 235) solid 2px;
+    text-align: center;
+ 
+    margin-top: 5px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.title{
+    color : white;
+
+    
+}
+
+h1{
+    font-size: 40px;
+}
+
+.result{
+   height:100%;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+
+.todoItem:nth-child(odd){
+    border: rgb(195, 154, 235) solid 2px;
+}
+
+.todoItem:nth-child(even){
+    border:rgb(195, 154, 235) solid 2px;
+}
+
+.loader{
+    position:absolute;
+    top: 35%;
+    left: 40%;
+
+
+.line {
+    animation: expand 1s ease-in-out infinite;
+  border-radius: 10px;
+  display: inline-block;
+  transform-origin: center center;
+  margin: 10px 10px;
+  width: 10px;
+  height: 60px;
+}
+
+.line:nth-child(1){
+    background: salmon;
+}
+
+.line:nth-child(2){
+    animation-delay: 180ms;
+    background:sandybrown ;
+}
+
+.line:nth-child(3){
+    animation-delay: 360ms;
+    background: salmon;
+}
+
+.line:nth-child(4){
+    animation-delay: 540ms;
+    background:sandybrown ;
+}
+
+@keyframes expand {
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(2);
+    }
+}
+}

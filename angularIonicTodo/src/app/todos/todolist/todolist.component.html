@@ -1,0 +1,117 @@
+<ion-grid class="container">
+  <ion-button class="btnCreate" color="pink" (click)=toggleDisplayDiv()>More</ion-button>
+  <div [hidden]="isShowDiv" *ngIf="weatherList.length" class="dayTime">
+      
+            <div *ngIf="weatherList[0].main ==='Clear' " class="sun">
+      <p>Today is {{weatherList[0].time.toDateString()}} time is {{weatherList[0].time.toLocaleTimeString('en-US',{hour:'numeric',minute:'numeric'})}} </p>
+      <p>Sunrise is at {{weatherList[0].sunrise|date:'shortTime'}} </p>
+      <p>Sunset is at {{weatherList[0].sunset|date:'shortTime'}} </p>
+        <p>We are in {{weatherList[0].place}}</p>
+       <p> The average temperature is {{weatherList[0].temperature}}°C</p>
+       <p *ngIf="weatherList[0].temperature <'16'">Take a pull-over</p>
+       <p *ngIf="weatherList[0].temperature < '10'"> Take a coat</p>
+       
+       <p>The sky is {{weatherList[0].forcast}} and it feels like {{weatherList[0].feelTemp}}°C 
+            with a wind speed of {{weatherList[0].wind}} m/s</p>
+  
+          </div>
+       <div *ngIf="weatherList[0].main ==='Thunderstorm'" class="thunder">
+        <p>Today is {{weatherList[0].time.toDateString()}} time is {{weatherList[0].time.toLocaleTimeString('en-US',{hour:'numeric',minute:'numeric'})}} </p>
+        <p>Sunrise is at {{weatherList[0].sunrise|date:'shortTime'}} </p>
+        <p>Sunset is at {{weatherList[0].sunset|date:'shortTime'}} </p>
+          <p>We are in {{weatherList[0].place}}</p>
+         <p> The average temperature is {{weatherList[0].temperature}}°C </p>
+         <p *ngIf="weatherList[0].temperature < '16'">Take a pull-over</p>
+         <p *ngIf="weatherList[0].temperature < '10'"> Take a coat</p>
+         <p>The sky is {{weatherList[0].forcast}} and it feels like {{weatherList[0].feelTemp}}°C 
+              with a wind speed of {{weatheList[0].wind}} m/s</p>
+  
+      </div>
+      
+         <div *ngIf="weatherList[0].main ==='Rain'" class="rain"><ion-icon name="umbrella-outline"></ion-icon>
+          <p>Today is {{weatherList[0].time.toDateString()}} time is {{weatherList[0].time.toLocaleTimeString('en-US',{hour:'numeric',minute:'numeric'})}} </p>
+          <p>Sunrise is at {{weatherList[0].sunrise|date:'shortTime'}} </p>
+          <p>Sunset is at {{weatherList[0].sunset|date:'shortTime'}} </p>
+            <p>We are in {{weatherList[0].place}}</p>
+           <p> The average temperature is {{weatherList[0].temperature}}°C</p>
+           <p *ngIf="weatherList[0].temperature < '16'">Take a pull-over  </p>
+           <p *ngIf="weatherList[0].temperature < '10'"> Take a coat</p>
+           <p>The sky is {{weatherList[0].forcast}} and it feels like {{weatherList[0].feelTemp}}°C 
+                with a wind speed of {{weatherList[0].wind}} m/s</p>
+  
+        </div>
+        <div *ngIf="weatherList[0].main ==='Drizzle'" class="drizzle"><ion-icon name="umbrella-outline"></ion-icon>
+          <p>Today is {{weatherList[0].time.toDateString()}} time is {{weatheList[0].time.toLocaleTimeString('en-US',{hour:'numeric',minute:'numeric'})}} </p>
+          <p>Sunrise is at {{weatherList[0].sunrise|date:'shortTime'}} </p>
+          <p>Sunset is at {{weatherList[0].sunset|date:'shortTime'}} </p>
+            <p>We are in {{weatherList[0].place}}</p>
+           <p> The average temperature is {{weatherList[0].temperature}}°C </p>
+           <p *ngIf="weatherList[0].temperature < '16'">Take a hoody  </p>
+           <p *ngIf="weatherList[0].temperature < '10'"> Take a coat </p>
+           <p>The sky is {{weatherList[0].forcast}} and it feels like {{weatherList[0].feelTemp}}°C 
+                with a wind speed of {{weatherList[0].wind}} m/s</p>
+        </div>
+        <div *ngIf="weatherList[0].main ==='Snow'" class="snow">
+          <p>Today is {{weatherList[0].time.toDateString()}} time is {{weatherList[0].time.toLocaleTimeString('en-US',{hour:'numeric',minute:'numeric'})}} </p>
+          <p>Sunrise is at {{weatherList[0].sunrise|date:'shortTime'}} </p>
+          <p>Sunset is at {{weatherList[0].sunset|date:'shortTime'}} </p>
+            <p>We are in {{weatherList[0].place}}</p>
+           <p> The average temperature is {{weatherList[0].temperature}}°C </p>
+           
+           <p *ngIf="weatherList[0].temperature < '5'"> Take a coat and your gloves</p>
+           <p>The sky is {{weatherList[0].forcast}} and it feels like {{weatherList[0].feelTemp}}°C 
+                with a wind speed of {{weatherList[0].wind}}m/s</p>
+        </div>
+        <div *ngIf="weatherList[0].main ==='Clouds'" class="clouds">
+          <p>Today is {{weatherList[0].time.toDateString()}} time is {{weatherList[0].time.toLocaleTimeString('en-US',{hour:'numeric',minute:'numeric'})}} </p>
+          <p>Sunrise is at {{weatherList[0].sunrise|date:'shortTime'}} </p>
+          <p>Sunset is at {{weatherList[0].sunset|date:'shortTime'}} </p>
+            <p>We are in {{weatherList[0].place}}</p>
+           <p> The average temperature is {{weatherList[0].temperature}}°C </p>
+           <p *ngIf="weatherList[0].temperature < '16'">Take a pull-over</p>
+           <p *ngIf="weatherList[0].temperature < '10'"> Take a coat</p>
+           <p>The sky is {{weatherList[0].forcast}} and it feels like {{weatherList[0].feelTemp}}°C 
+                with a wind speed of {{weatherList[0].wind}} m/s</p>
+        </div>
+        <div *ngIf="weatherList[0].main ==='Atmosphere'" class="atmosphere">
+          <p>Today is {{weatherList[0].time.toDateString()}} time is {{weatherList[0].time.toLocaleTimeString('en-US',{hour:'numeric',minute:'numeric'})}} </p>
+          <p>Sunrise is at {{weatherList[0].sunrise|date:'shortTime'}} </p>
+          <p>Sunset is at {{weatherList[0].sunset|date:'shortTime'}} </p>
+            <p>We are in {{weatherList[0].place}}</p>
+           <p> The average temperature is {{weatherList[0].temperature}}°C </p>
+           <p *ngIf="weatherList[0].temperature < '16'">Take a pull-over</p>
+           <p *ngIf="weatherList[0].temperature < '10'"> Take a coat</p>
+           <p>The sky is {{weatherList[0].forcast}} and it feels like {{weatherList[0].feelTemp}}°C 
+                with a wind speed of {{weatherList[0].wind}} m/s</p>
+        </div>
+    </div>
+  
+    <h1>List</h1>
+    <ion-row class="result">
+      <ion-col size=12>
+        <div *ngIf="error">
+          <ion-button color="pink" (click)="retry()">Try again</ion-button>
+        </div>
+        <div *ngIf="!todolist && !error ; else new" class="loader">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ng-template #new>
+          <ion-button class="btnCreate" color="pink" routerLink="todo">New task</ion-button>
+        </ng-template>
+  
+        <div *ngFor="let todo of todolist" class="todoItem">
+          
+          <h2 class="title" >{{todo.task}}</h2>
+          <ion-button [routerLink]="['detail', todo.task]" color="medium">Detail</ion-button>
+          <ion-button [disabled]="this.todoDisabled == this.todo" color="danger" (click)="delete(todo)"><ion-icon name="trash"></ion-icon></ion-button>
+        </div>
+  
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+  
+
