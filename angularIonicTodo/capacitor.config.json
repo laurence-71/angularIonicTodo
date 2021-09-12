@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "angularIonicTodo",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

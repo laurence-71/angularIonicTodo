@@ -1,0 +1,7 @@
+{
+  "name": "angularIonicTodo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
