@@ -24,7 +24,7 @@
          <p *ngIf="weatherList[0].temperature < '16'">Take a pull-over</p>
          <p *ngIf="weatherList[0].temperature < '10'"> Take a coat</p>
          <p>The sky is {{weatherList[0].forcast}} and it feels like {{weatherList[0].feelTemp}}°C 
-              with a wind speed of {{weatheList[0].wind}} m/s</p>
+              with a wind speed of {{weatherList[0].wind}} m/s</p>
   
       </div>
       
@@ -41,7 +41,7 @@
   
         </div>
         <div *ngIf="weatherList[0].main ==='Drizzle'" class="drizzle"><ion-icon name="umbrella-outline"></ion-icon>
-          <p>Today is {{weatherList[0].time.toDateString()}} time is {{weatheList[0].time.toLocaleTimeString('en-US',{hour:'numeric',minute:'numeric'})}} </p>
+          <p>Today is {{weatherList[0].time.toDateString()}} time is {{weatherList[0].time.toLocaleTimeString('en-US',{hour:'numeric',minute:'numeric'})}} </p>
           <p>Sunrise is at {{weatherList[0].sunrise|date:'shortTime'}} </p>
           <p>Sunset is at {{weatherList[0].sunset|date:'shortTime'}} </p>
             <p>We are in {{weatherList[0].place}}</p>
